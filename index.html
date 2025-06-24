@@ -8,7 +8,9 @@
 		<title>Portifólio de Ciência de Dados</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfólio de Ciência de Dados de Erick Gomes, mestre em Física Computacional, especialista em MLOps, IA e Ciência de Dados.">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>html { scroll-behavior: smooth; }</style>
 	</head>
 	<body class="is-preload">
 
@@ -23,32 +25,49 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Portifólio de Projetos</strong> de Ciência de Dados</a>
 									<ul class="icons">
-										<li class="icon brands fa-github"><a target="_blank" href="https://github.com/erickfog/"> </a> Github</li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li>
+											<a target="_blank" href="https://github.com/erickfog/" class="icon brands fa-github">
+												Github
+											</a>
+										</li>
+										<li>
+											<a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a>
+										</li>
 									</ul>
 								</header>
 
+							<!-- Navigation -->
+								<nav id="nav" style="margin-bottom: 2em;">
+									<ul style="display: flex; flex-wrap: wrap; gap: 1.5em; list-style: none; padding: 0; justify-content: center; align-items: center; font-family: 'Open Sans', sans-serif; font-size: 1em;">
+										<li><a href="#sobre-mim">Sobre mim</a></li>
+										<li><a href="#experiencias">Experiências</a></li>
+										<li><a href="#habilidades">Habilidades</a></li>
+										<li><a href="#projetos">Projetos de Ciência de Dados</a></li>
+										<li><a href="#artigo-inovador">Artigo Inovador</a></li>
+										<li><a href="#contato">Contato</a></li>
+									</ul>
+								</nav>
+
 							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
+								<section id="banner" style="position: relative; overflow: hidden;">
+									<div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;"></div>
+									<div class="content" style="position: relative; z-index: 1;">
 										<header>
-											<h1>Olá, bem-vindo(a) ao meu portifólio de ciência de dados.<br />
-											</h1>
+											<h1>Olá, bem-vindo(a) ao meu portifólio de ciência de dados.<br /></h1>
 										</header>
 										<p>Olá, seja muito bem-vindo (a) ao meu portfólio de projetos de Ciência de Dados.</p>
 										<p>Nessa página, eu demonstro minhas habilidades de resolver problemas de negócio utilizando conceitos e ferramentas da Ciência de Dados, através de projetos com dados públicos.</p>
-                    <p>Você vai encontrar também, minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo a Ciência de Dados. </p>
-                    <p>Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
-										<ul class="actions">
-										</ul>
+										<p>Você vai encontrar também, minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo a Ciência de Dados. </p>
+										<p>Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
+										<ul class="actions"></ul>
 									</div>
-									<span class="image object">
-										<img src="images/Imagem_capa.jpg" alt="" />
+									<span class="image" style="position: relative; z-index: 1;">
+										<img src="images/Imagem_capa.jpg" alt="Foto de capa do portfólio de Erick Gomes" style="width: 700px; height: 700px; border-radius: 50%; object-fit: cover;" />
 									</span>
 								</section>
 								<section>
-									<header class="main">
-										<h1>Sobre mim</h1>
+									<header class="main" id="sobre-mim">
+										<h1>Sobre Mim</h1>
 									</header>
 									<p>Meu nome é Erick Gomes, sou mestre em Física Computacional pela Universidade Federal Fluminense (UFF), com sólida experiência em Ciência de Dados e Engenharia de Machine Learning. Atuo como Cientista de Dados Sênior, com forte domínio em projetos de alto impacto, liderando iniciativas de MLOps, engenharia de dados e desenvolvimento de soluções de IA para negócios. Minha trajetória inclui atuação estratégica no mercado financeiro, desenvolvimento de pipelines robustos, implantação de modelos de machine learning em produção e liderança técnica de times multidisciplinares.</p>
 									<p>Tenho expertise em aplicar algoritmos avançados de machine learning no contexto da física de materiais e em ambientes corporativos, além de experiência consolidada em integração de soluções com plataformas em nuvem, automação de processos e gestão de projetos de dados. Estou sempre em busca de aprimorar minhas habilidades e entregar resultados de alto valor para as organizações.</p>
@@ -56,39 +75,42 @@
 									</section>
 
 									<section>
-										<header class="main">
+										<header class="main" id="experiencias">
 											<h1>Experiências</h1>
 										</header>
 										<!-- Content -->
 
 										<h2 id="content">Cientista de Dados | Engenheiro de Machine Learning (MLOps) - Mobi2buy</h2>
-										<p><em>Período:Abril 2024 - atualmente</em></p>
+										<p><em>Período: Abril 2024 - atualmente</em></p>
 										<p>Localização: São Paulo, Brasil (Trabalho Remoto)</p>
 										<ul>
 											<li>Responsável pelo pipeline de ingestão de dados da esteira de MLOps utilizando AWS (S3, Glue, Athena, EC2).</li>
-											<li>Construção de códigos Python e refatoração para integração com AWS via SDK.</li>
-											<li>Responsável pelo pipeline de MLOps utilizando MLFLOW, DVC, Github Actions, Evidentlyai, EC2, Airflow, Prometheus, Grafana e Terraform.</li>
-											<li>Responsável pela construção de modelos de machine learning, implantação e manutenção.</li>
-											<ul>
-												<li>Construção de modelo de propensão para squad de cobrança.</li>
-												<li>Construção de modelo de previsão de vendas.</li>
-												<li>Construção de modelo de previsão de churn.</li>
-											</ul>
-											<li>Responsável pela construção e manutenção de pipelines de engenharia de dados usando AWS (Glue, Lambda, Redshift).</li>
-											<ul>
-												<li>Consumo de banco de dados transacional (OLTP) para ambiente analítico (OLAP).</li>
-												<li>Consumo de dados de API (REST e GraphQL) para ambiente analítico.</li>
-											</ul>
-											<li>Construção de Chatbots utilizando IA generativa, langchain, Vertex AI (Agent Builder).</li>
-											<ul>
-												<li>Utilização do langchain para integrar com diversos modelos de GenAI.</li>
-												<li>Utilização do langchain para construir Retrieval Augmented Generation (RAG).</li>
-												<li>Utilização do LangChain, CrewAI, AutoGen e Langflow para construção de AI Agents.</li>
-												<li>Construção de sistemas com múltiplos agentes de AI.</li>
-												<li>Monitoramento de Agentes.</li>
-												<li>Desenvolvimento de Agentes para Visão Computacional.</li>
-											</ul>
-											<li>Responsável por fazer a gestão de Backlog do time e conduzir as cerimônias do scrum.</li>
+											<li>Desenvolvimento e refatoração de códigos Python para integração com AWS via SDK.</li>
+											<li>Responsável pelo pipeline de MLOps utilizando MLflow, DVC, Github Actions, Evidentlyai, EC2, Airflow, Prometheus, Grafana e Terraform.</li>
+											<li>Responsável pela construção de modelos de machine learning, implantação e manutenção:
+												<ul>
+													<li>Construção de modelo de propensão para squad de cobrança.</li>
+													<li>Construção de modelo de previsão de vendas.</li>
+													<li>Construção de modelo de previsão de churn.</li>
+												</ul>
+											</li>
+											<li>Responsável pela construção e manutenção de pipelines de engenharia de dados usando AWS (Glue, Lambda, Redshift):
+												<ul>
+													<li>Consumo de banco de dados transacional (OLTP) para ambiente analítico (OLAP).</li>
+													<li>Consumo de dados de API (REST e GraphQL) para ambiente analítico.</li>
+												</ul>
+											</li>
+											<li>Construção de Chatbots utilizando IA generativa, Langchain, Vertex AI (Agent Builder):
+												<ul>
+													<li>Utilização do Langchain para integrar com diversos modelos de GenAI.</li>
+													<li>Utilização do Langchain para construir Retrieval Augmented Generation (RAG).</li>
+													<li>Utilização do Langchain, CrewAI, AutoGen e Langflow para construção de AI Agents.</li>
+													<li>Construção de sistemas com múltiplos agentes de IA.</li>
+													<li>Monitoramento de agentes.</li>
+													<li>Desenvolvimento de agentes para Visão Computacional.</li>
+												</ul>
+											</li>
+											<li>Responsável pela gestão do backlog do time e condução das cerimônias do Scrum.</li>
 										</ul>
 
 										<h2 id="content">Cientista de Dados - Klavi</h2>
@@ -168,7 +190,7 @@
 
 							<!-- Section -->
 								<section>
-									<header class="major">
+									<header class="major" id="habilidades">
 										<h2>Habilidades</h2>
 									</header>
 									<div class="features">
@@ -176,10 +198,10 @@
 											<div class="content">
 												<h3>Linguagens de Programação, Banco de Dados e Sistema Operacional</h3>
 												<ul>
-													<li>Python(Pandas,Numpy,Scikit-learn).</li>
+													<li>Linguagem de Programação: Python (Pandas, Numpy, Scikit-learn).</li>
 													<li>Programação C e C++.</li>
-													<li>SQL, MySQL, MongoDB e PostegreSQL.</li>
-													<li>+10 anos usando Linux(Diferentes Distribuições)</li>
+													<li>SQL, MySQL, MongoDB e PostgreSQL.</li>
+													<li>+10 anos usando Linux (diferentes distribuições).</li>
 												</ul>
 											</div>
 										</article>
@@ -242,7 +264,7 @@
 
 							<!-- Section -->
 								<section>
-									<header class="major">
+									<header class="major" id="projetos">
 										<h2>Projetos de Ciência de Dados</h2>
 									</header>
 									<div class="posts">
@@ -302,7 +324,7 @@
 
 								<section>
 	    <div>
-	        <header class="major">
+	        <header class="major" id="artigo-inovador">
 	            <h2>1° Lugar Artigo Inovador - Prêmio IEL de Talentos</h2>
 	        </header>
 	        <div class="posts">
@@ -312,7 +334,7 @@
 	                <h4>Objetivo: </h4>
 	                <p>Este artigo explora a sinergia entre Open Finance e Inteligência Artificial (IA) e seu impacto na indústria financeira. Analisamos o conceito do open finance, que engloba a abertura de dados e serviços financeiros através de APIs (interfaces de programação de aplicativos), e a aplicação da IA nesse contexto. Discutimos os benefícios do open finance, como maior inclusão financeira e inovação, e destacamos como a IA pode ser utilizada para aprimorar a análise de dados e a personalização de serviços financeiros. Concluímos que a combinação de open finance e IA tem o potencial de transformar a forma como nos relacionamos com as finanças, proporcionando uma experiência mais eficiente, conveniente e personalizada. </p>
 	                <ul class="actions">
-	                    <li><a href="https://github.com/erickfog/Open_Finance_Article/blob/main/Artigo_Inova_Talentos.pdf" class="button">Ler Artigo</a></li>
+	                    <li><a href="https://github.com/erickfog/Open_Finance_Article/blob/main/Artigo_Inova_Talentos.pdf" class="button" target="_blank">Ler Artigo</a></li>
 	                </ul>
 	            </article>
 	        </div>
@@ -325,7 +347,7 @@
 
 
 								<section>
-									<header class="main">
+									<header class="main" id="contato">
 										<h1>Contato</h1>
 									</header>
 									<p>Sinta-se à vontade para entrar em contato.</p>
@@ -347,6 +369,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+			<script>
+			particlesJS('particles-js', {
+			  "particles": {
+			    "number": {"value": 60, "density": {"enable": true, "value_area": 800}},
+			    "color": {"value": "#320971"},
+			    "shape": {"type": "circle"},
+			    "opacity": {"value": 0.5, "random": true},
+			    "size": {"value": 4, "random": true},
+			    "line_linked": {"enable": true, "distance": 150, "color": "#320971", "opacity": 0.3, "width": 1},
+			    "move": {"enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false}
+			  },
+			  "interactivity": {
+			    "detect_on": "canvas",
+			    "events": {"onhover": {"enable": true, "mode": "repulse"}, "onclick": {"enable": true, "mode": "push"}},
+			    "modes": {"repulse": {"distance": 100, "duration": 0.4}, "push": {"particles_nb": 4}}
+			  },
+			  "retina_detect": true
+			});
+			</script>
 
 	</body>
 </html>
